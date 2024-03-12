@@ -1,6 +1,6 @@
 // my_exponent/src/lib.rs
 
-fn power(base: i64, exponent: usize) -> i64 {
+pub fn power(base: i64, exponent: usize) -> i64 {
     let mut res = 1;
     if exponent == 0 {
         return 1;

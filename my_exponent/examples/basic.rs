@@ -1,4 +1,4 @@
-// my_exponent/examples/basics.rs
+// my_exponent/examples/basic.rs
 
 use my_exponent::power;
 

@@ -1,0 +1,4 @@
+# workspace_demo/cargo.toml
+
+[workspace]
+members = ["src/lib.rs", "app"]
