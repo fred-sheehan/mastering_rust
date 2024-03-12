@@ -7,9 +7,7 @@ use std::io::prelude::BufRead;
 use std::io::BufReader;
 
 #[derive(Debug)]
-struct WordCounter(HashMap<String, u64>)
-where
-    String: std::cmp::Eq + std::hash::Hash;
+struct WordCounter(HashMap<String, u64>);
 
 impl WordCounter {
     fn new() -> WordCounter {
@@ -23,7 +21,7 @@ impl WordCounter {
     }
 
     fn display(self) {
-        for (key, value) in self.0.iter().filter(|&(_key, value)| *value > 1) {
+        for (key, value) in self.0.iter() {
             println!("{}: {}", key, value);
         }
     }
